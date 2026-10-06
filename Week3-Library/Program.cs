@@ -1,20 +1,17 @@
 ﻿using Week3_Library;
+class Program {
 
-Book book = new Book();
+    static void Main(string[] args)
+    {
+        //Information for one book in our library
+        Book book = new Book("C# for beginners", "BillGates", "12345678");
 
-//Information for one book in our library
+        book.DisplayInfo();
 
-book.Title = "C# for beginners";
-book.Author = "BillGates";
-book.ISBN = "12345678";
+        //Information for another book in our library
 
-book.DisplayInfo();
+        Book book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "55127846");
 
-//Information for another book in our library
-
-Book book1 = new Book();
-book1.Title = "The Great Gatsby";
-book1.Author = "F. Scott Fitzgerald";
-book1.ISBN = "55127846";
-
-book1.DisplayInfo();
+        book1.DisplayInfo();
+    }
+}
